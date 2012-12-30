@@ -1,0 +1,14 @@
+balance = 5000
+annualInterestRate = .18
+monthlyPaymentRate = .02
+
+for month in range (1,13):
+
+    minimumMonthlyPayment = round((monthlyPaymentRate * balance), 2)
+    
+    balance = round((balance - minimumMonthlyPayment)*(1 + (annualInterestRate / 12)), 2)
+
+
+    print('Month:' , month)
+    print('Minimum monthly payment:' , minimumMonthlyPayment)
+    print('Remaining balance:' , balance)

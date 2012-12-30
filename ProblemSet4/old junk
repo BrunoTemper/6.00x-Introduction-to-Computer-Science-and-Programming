@@ -1,0 +1,64 @@
+
+
+
+
+
+
+
+
+"""
+    # TO DO ... <-- Remove this comment when you code this function
+    inputDict = getFrequencyDict(word)
+    lettersUsed = []
+
+    for tempWord in wordList:
+        tempWordDict = getFrequencyDict(tempWord)
+        for letter in tempWordDict:
+            lettersUsed[letter] = lettersUsed.get(letter, 0) + tempWordDict.get(letter, 0)
+
+
+    print  type(getFrequencyDict(word))
+ #   for letter in inputDict:    
+#            lettersUsed[letter] = lettersUsed.get(letter, 0) + inputDict.get(letter, 0)
+
+    print lettersUsed
+"""
+
+"""
+    tempHand = hand.deepcopy()
+    tempWordList = wordList[:]
+
+    #goes thru wordList and gets rid of those words from the hand first
+    for tempWord in tempWordList:
+        tempWordDict = getFrequencyDict(tempWord)
+        for letter in tempWordDict:
+            tempHand[letter] = tempHand.get(letter, 0) - tempWordDict.get(letter, 0)
+
+#now to the new word
+    for letter in word:       
+        tempHand[letter] = tempHand.get(letter, 0) - 1
+
+    for letter in word:
+        print tempHand.get(letter, 0)
+        if tempHand[letter] < 0:
+#            print tempHand.get(letter, 0)
+ #           print tempHand.get(letter, 0)
+  #          print tempHand.get(letter, 0)
+            return False
+    return True
+"""
+
+
+
+#        if (tempHand.has_key(letter) == False) or (tempHand.get(letter, 0) == 0):            
+ #           return False
+    
+
+        
+##
+##    tempHand = updateHand(tempHand, word)
+##
+##    for letter in word:
+##        if tempHand[letter] < 0 or tempHand[letter] == None:
+##            return False
+##    return True
